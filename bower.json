@@ -1,0 +1,26 @@
+{
+  "name": "laravel_quicktask",
+  "description": "\"\"",
+  "main": "",
+  "authors": [
+    "XuanHoang <lexuanhoang1912@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "11549"
+  ],
+  "homepage": "https://github.com/hoang11549/laravel_quicktask",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "boostrap": "^5.0.2",
+    "font-awesome": "Font-Awesome#5.15.3",
+    "jquery": "^3.6.0"
+  }
+}
