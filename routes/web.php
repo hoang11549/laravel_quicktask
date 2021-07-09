@@ -15,9 +15,10 @@ use App\Http\Controllers\LanguageController;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 Route::get('language/{language}', [LanguageController::class, 'index'])->name('language');
 Route::resource('/task', tasksControllers::class)->only([
-    'index', 'store'
+    'index', 'store', 'destroy',
 ]);;

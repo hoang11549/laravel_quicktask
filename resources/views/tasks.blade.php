@@ -60,6 +60,16 @@
 
                                         <!-- Task Delete Button -->
 
+                                        <td>
+                                            <form action="{{ route('task.destroy', ['task' => $task->id]) }}"
+                                                method="POST">
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <button type="submit" class="btn btn-danger">
+                                                    <i class="fa fa-btn fa-trash"></i>{{ trans('messages.Delete') }}
+                                                </button>
+                                            </form>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
